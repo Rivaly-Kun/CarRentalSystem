@@ -7,6 +7,7 @@
 ---
 
 ### 📂 Project Structure
+```
 CarRentalSystem/
 ├── .vscode/            # VSCode configuration files
 ├── css/                # Stylesheets
@@ -27,7 +28,7 @@ CarRentalSystem/
 ├── notes               # Development notes
 ├── README.md           # Project documentation
 └── todo                # Task list or project planning
-
+```
 ---
 
 ### ⚙️ Features
