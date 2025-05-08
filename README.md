@@ -1,39 +1,44 @@
-
-## CourtReserveScheduling Admin – Documentation
+## CarRentalSystem – Documentation
 
 ### Project Overview
 
-**CourtReserveScheduling (Admin)** is the administrative dashboard for managing courts, reservations, and user activity in the Court Reservation System. Designed for simplicity and speed, this panel allows admins to monitor and control bookings made via the public user-facing app.
+**CarRentalSystem** is a web-based administrative dashboard designed to manage vehicle listings, customer bookings, rental history, and fleet availability. Built for efficiency and clarity, this system enables rental company staff to easily track, update, and control car rentals in real-time.
 
 ---
 
 ### 📂 Project Structure
-
-```
-CourtReserveScheduling/
-├── html/                # HTML pages (dashboard, login, etc.)
-│   ├── dashboard.html
-│   ├── login.html
-│   └── court_management.html
-├── css/                 # Stylesheets
+CarRentalSystem/
+├── .vscode/            # VSCode configuration files
+├── css/                # Stylesheets
 │   └── style.css
-├── js/                  # JavaScript for interactivity
-│   └── components.js
-├── img/                 # UI images and icons
-└── README.md
-```
+├── html/               # HTML pages
+│   └── index.html
+├── img/                # UI images and icons
+├── js/                 # JavaScript files for interactivity
+│   ├── bookings.js
+│   ├── cars.js
+│   ├── functions.js
+│   ├── home.js
+│   ├── logs.js
+│   ├── print.js
+│   ├── script.js
+│   └── users.js
+├── cors.json           # CORS configuration
+├── notes               # Development notes
+├── README.md           # Project documentation
+└── todo                # Task list or project planning
 
 ---
 
 ### ⚙️ Features
 
-* 🧾 **Admin Login**: Secure login page for administrator access.
-* 📊 **Dashboard**: Overview of total reservations, users, and court statuses.
-* 🏟 **Court Management**: Add, edit, or remove court details.
-* 📅 **Reservation Logs**: View current and past reservations.
-* ❌ **Cancel Bookings**: Admins can cancel court reservations.
-* 🔍 **User Activity Monitoring**: Track user interactions and bookings.
-* 🌐 **Fully Responsive**: Clean UI that works on desktop and tablet.
+* 🔐 **Admin Login**: Secure login for staff to access the dashboard.
+* 📊 **Dashboard Overview**: View current rentals, active users, and available vehicles.
+* 🚗 **Vehicle Management**: Add, edit, or delete cars from the system.
+* 🧾 **Booking History**: Monitor past and current rental transactions.
+* ❌ **Cancel Rentals**: Allow admins to cancel or terminate bookings.
+* 👁️ **Customer Activity Logs**: Track user interactions, booking attempts, and payments.
+* 📱 **Responsive Design**: Clean and adaptive layout suitable for desktop and tablets.
 
 ---
 
@@ -44,30 +49,29 @@ CourtReserveScheduling/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rivaly-Kun/CourtReserveScheduling.git
-   cd CourtReserveScheduling
+   git clone https://github.com/Rivaly-Kun/CarRentalSystem.git
+   cd CarRentalSystem
    ```
 
-2. Open `html/index.html` in your vscode.
+2. Open `html/dashboard.html` (or `login.html`) in your browser or IDE.
 
 #### 🌐 Option 2: Serve via Local Server
 
-Use VSCode’s Live Server or any HTTP server if you're making dynamic integrations.
+Use VSCode’s Live Server extension or any basic HTTP server to view it in your browser with live updates.
 
 ---
 
 ### 🛠 Tech Stack
 
-| Purpose            | Technology           |
-| ------------------ | -------------------- |
-| Structure (UI)     | HTML                 |
-| Styling            | CSS                  |
-| Interactivity      | JavaScript           |
-| Backend (Optional) | Firebase (Pluggable) |
+| Purpose            | Technology         |
+| ------------------ | ------------------ |
+| Structure (UI)     | HTML               |
+| Styling            | CSS                |
+| Interactivity      | JavaScript         |
+| Backend (Optional) | Firebase / Node.js |
 
 ---
 
 ### 👨‍💻 Author
 
 Made by [Rivaly-Kun](https://github.com/Rivaly-Kun)
-
