@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- shit broken-->
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../img/logo (3).png ">
+    <title>Admin - RentSwift</title>
+
+
+</head>
+<body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <img src="/img/logo (3).png" id="Shopicon" class='bx'>
+            
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="#" id="dashboard-link">
+                    <i class='bx' >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1"/></svg>
+                    </i>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="analytics-link">
+                    <i class='bx' ><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7" />
+                    </svg></i>
+                    <span class="text">Users</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="post-link">
+                    <i class='bx' >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M6.271 2.112c-.81.106-1.238.301-1.544.6c-.305.3-.504.72-.613 1.513C4.002 5.042 4 6.124 4 7.675v8.57a4.2 4.2 0 0 1 1.299-.593c.528-.139 1.144-.139 2.047-.138H20V7.676c0-1.552-.002-2.634-.114-3.451c-.109-.793-.308-1.213-.613-1.513c-.306-.299-.734-.494-1.544-.6c-.834-.11-1.938-.112-3.522-.112H9.793c-1.584 0-2.688.002-3.522.112m.488 4.483c0-.448.37-.811.827-.811h8.828a.82.82 0 0 1 .827.81a.82.82 0 0 1-.827.811H7.586a.82.82 0 0 1-.827-.81m.827 2.973a.82.82 0 0 0-.827.81c0 .448.37.811.827.811h5.517a.82.82 0 0 0 .828-.81a.82.82 0 0 0-.828-.811z" clip-rule="evenodd"/><path fill="currentColor" d="M7.473 17.135H20c-.003 1.13-.021 1.974-.113 2.64c-.109.793-.308 1.213-.613 1.513c-.306.299-.734.494-1.544.6c-.834.11-1.938.112-3.522.112H9.793c-1.584 0-2.688-.002-3.522-.111c-.81-.107-1.238-.302-1.544-.601c-.305-.3-.504-.72-.613-1.513c-.041-.3-.068-.637-.084-1.02a2.46 2.46 0 0 1 1.697-1.537c.29-.076.667-.083 1.746-.083"/></svg>
+                </i>
+                    <span class="text">Booking</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#" id="asstitant-link">
+                    <i class='bx' >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512"><path fill="currentColor" fill-rule="evenodd" d="M128 298.666c23.564 0 42.667 19.103 42.667 42.667S151.564 384 128 384s-42.666-19.103-42.666-42.667s19.102-42.667 42.666-42.667m245.334 0c23.564 0 42.666 19.103 42.666 42.667S396.898 384 373.334 384s-42.667-19.103-42.667-42.667s19.103-42.667 42.667-42.667m-88.89-149.333l5.69 4.267l81.856 61.397l65.025 16.266c17.877 4.47 30.731 19.85 32.182 37.966l.137 3.427v74.667l-16.16 4.04l-17.466 4.367a64.2 64.2 0 0 0 1.626-14.397c0-35.346-28.654-64-64-64s-64 28.654-64 64c0 7.48 1.283 14.661 3.642 21.334H188.358A63.9 63.9 0 0 0 192 341.333c0-35.346-28.653-64-64-64c-35.346 0-64 28.654-64 64c0 3.244.242 6.431.707 9.545l-22.04-22.042V226.943l4.945-5.934l53.333-64l6.397-7.676zM270.23 192H127.318l-35.55 42.666h206.899l12.192-12.192z"/></svg>
+                </i>
+                    <span class="text">Cars</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="members-link">
+                    <i class='bx' >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M16 9h5.5L16 3.5zM7 2h10l6 6v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2M3 6v16h18v2H3a2 2 0 0 1-2-2V6z"/></svg>
+
+                    </i>
+                    <span class="text">Logs</span>
+                </a>
+            </li>
+           
+            
+            
+            
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle' ></i>
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->    
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu' ></i>
+            <form action="#">
+                <div class="form-input"></div>
+            </form>
+          
+         
+
+            <label class="ui-switch" for="switch-mode">
+                <input type="checkbox" id="switch-mode" hidden>
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+            <a href="#" class="profile"></a>
+        </nav>
+
+        <!-- NAVBAR -->
+
+        <main>
+            <div class="head-title">
+                <div class="left">
+                    <h1 id="content-title">Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                        <li><i class='bx bx-chevron-right' ></i></li>
+                        <li><a class="active" href="#" id="BreadcrumName">Home</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Content for the "Dashboard" section -->
+            <div id="dashboard-content">
+                <ul class="box-info">
+                    <li>
+                        
+                        <i class='bx ' >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 16 16"><path fill="currentColor" d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m3.707-9.293l-4.003 4a1 1 0 0 1-1.415 0l-1.997-2a1 1 0 1 1 1.416-1.414l1.29 1.293l3.295-3.293a1 1 0 0 1 1.414 1.414"/></svg>
+                        </i>
+                        <span class="text">
+                            <h3 id="Reports">0</h3>
+                            <p>Available Cars</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx '><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="12" cy="12" r="9" opacity="0.16"/><path d="M12 20a8 8 0 0 1-8-8H2c0 5.523 4.477 10 10 10zm0-16a8 8 0 0 1 8 8h2c0-5.523-4.477-10-10-10zm-8 8a7.97 7.97 0 0 1 2.343-5.657L4.93 4.93A9.97 9.97 0 0 0 2 12zm2.343-5.657A7.97 7.97 0 0 1 12 4V2a9.97 9.97 0 0 0-7.071 2.929zm-1.414 0l12.728 12.728l1.414-1.414L6.343 4.929zM20 12a7.97 7.97 0 0 1-2.343 5.657l1.414 1.414A9.97 9.97 0 0 0 22 12zm-2.343 5.657A7.97 7.97 0 0 1 12 20v2a9.97 9.97 0 0 0 7.071-2.929z"/></g></svg></i>
+                        <span class="text">
+                            <h3 id="Total_Users">0</h3>
+                            <p>Unvailable Cars</p>
+                        </span>
+                    </li>
+                    <li>
+                        <i class='bx'>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24"><path fill="currentColor" d="M16 9h5.5L16 3.5zM7 2h10l6 6v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2M3 6v16h18v2H3a2 2 0 0 1-2-2V6z"/></svg>
+                        </i>
+                        <span class="text">
+                            <h3 id="Requests">0</h3>
+                            <p>Pending Requests</p>
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="table-data">
+                    <div class="order">
+                        <div class="head">
+                            <h3>Latest Requests</h3>
+                            <!--<i class='bx bx-plus' ></i>-->
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                  
+                                    <th>Actions</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody id="productsDiv">
+                              <!--Here mga sud-->
+                              
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="inputContainer">
+                        <input type="text" id="inputField" placeholder="Enter text">
+                        <button id="AnnouncementBtn">Upload</button>
+                    </div>
+                    <div class="todo">
+                        <div class="head">
+                            <h3>Latest Users</h3>
+                            <i class='bx' id="TodoBtn"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"><circle cx="12" cy="6" r="4" fill="currentColor"/><path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5"/></svg></i>
+                        </div>
+                        <table>
+                                 <tbody id="AnnouncementsDiv"></tbody>
+                        </table>
+                   
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <main>
+ <!--History-->
+ <div id="all-members-content" style="display: none;">
+
+    <button id="exportExcelButton">Export to Excel</button>
+
+    <div class="table-data">
+        <div class="order">
+            <div class="head">
+                <h3>History</h3>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Court Name</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="HistoryDiv">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="table-data">
+        <div class="order">
+            <div class="head">
+                <h3>Payments</h3>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Payment</th>
+                        <th>Payment Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="PaymentsDiv">
+                    <!-- Filled by JS -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+</div>
+</div>
+        </main>
+   
+       
+
+        <!-- Content for the "UsersSec" section -->
+        
+ <main>
+    <main>
+        <div id="analytics-content" style="display: none;">
+                <div class="table-data">
+                    <div class="order">
+                        <div class="head">
+                            <h3>Users</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="VerifiedUsers"></tbody>
+                                <!-- User data will be dynamically loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!--Verify Users-->
+                <div class="table-data">
+                    <div class="order">
+                        <div class="head">
+                            <h3>Verify Users</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="UnverifiedUsers"></tbody>
+                                <!-- User data will be dynamically loaded here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </main>
+    
+
+        <!-- Content for the "Post" section -->
+        
+        <main>
+            <div id="post-content" style="display: none;">
+                <div id="viewPostContent" style="display: none;"></div>
+        
+                <div class="table-data">
+                    <div class="order">
+                        <div class="head">
+                            <h3>Bookings</h3>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Court</th>
+                                    <th>Start Time</th>
+                                    <th>End Time</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="PostDiv">
+                                <!-- Dynamic content will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+
+
+
+
+
+
+
+
+
+        <!-- Content for the "CourtSec" section -->
+        
+        <main>
+            <div id="asstitant-content" style="display: none;">
+               
+    <!-- Floating Button -->
+    <button id="addCourtBtn" style="
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    ">+</button>
+
+           
+        
+                <div class="table-data">
+                    <div class="order">
+                        <div class="head">
+                            <h3>Courts</h3>
+                            <!--<i class='bx bx-plus' ></i>-->
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Court Name</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Rate</th>
+                                    <th>Images</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="AssistantDiv">
+                                <!-- Courts go here -->
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </main>
+        
+   
+
+
+    </section>
+   
+    <!--Scripts-->    
+    <script type="module" src="../js/bookings.js"></script>
+    <script type="module" src="../js/print.js"></script>
+    <script type="module" src="../js/logs.js"></script>
+    <script type="module" src="../js/users.js"></script>
+    <script type="module" src="../js/home.js"></script>
+    <script type="module" src="../js/cars.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/functions.js"></script>
+
+     <!--Import Scripts-->
+<!-- Include this in your HTML HEAD or before closing body if not yet included -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert2@10"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
